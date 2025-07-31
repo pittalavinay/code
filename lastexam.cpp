@@ -165,6 +165,7 @@ class DisplayManager
         for(auto k:vd)
         {
             k->render();
+            
         }
     }
 };
