@@ -165,47 +165,47 @@ class DisplayManager
         for(auto k:vd)
         {
             k->render();
-            
-        }
-    }
-};
+        }   
+    }   }
+};  }
 int main()
-{
+{nt main()
  /*
- *
+ **
  *@brief creating the object to the displaymanager 
  * @brief adding the displayscreens to the addscreen by sending parameters
- *
+ * @brief adding the displayscreens to the addscreen by sending parameters
  */
     DisplayManager ds;
     shared_ptr<DisplayScreen> dm1=make_shared<SpeedometerScreen>();
-    dm1->updateData(60);
-    ds.addScreen(dm1);
+    dm1->updateData(60);reen> dm1=make_shared<SpeedometerScreen>();
+    ds.addScreen(dm1););
       shared_ptr<DisplayScreen> dm2=make_shared<WarningAlertScreen>();
-    dm2->updateData(0);
-    ds.addScreen(dm2);
+    dm2->updateData(0);yScreen> dm2=make_shared<WarningAlertScreen>();
+    ds.addScreen(dm2);;
       shared_ptr<DisplayScreen> dm3=make_shared<NavigationScreen>();
-    dm3->updateData(0);
-    ds.addScreen(dm3);
+    dm3->updateData(0);yScreen> dm3=make_shared<NavigationScreen>();
+    ds.addScreen(dm3);;
     shared_ptr<DisplayScreen> dm4=make_shared<SpeedometerScreen>();
-    dm4->updateData(80);
+    dm4->updateData(80);reen> dm4=make_shared<SpeedometerScreen>();
       shared_ptr<DisplayScreen> dm5=make_shared<WarningAlertScreen>();
-    dm5->updateData(1);
+    dm5->updateData(1);yScreen> dm5=make_shared<WarningAlertScreen>();
       shared_ptr<DisplayScreen> dm6=make_shared<NavigationScreen>();
-    dm6->updateData(1);
- /*
- *
+    dm6->updateData(1);yScreen> dm6=make_shared<NavigationScreen>();
+ /* dm6->updateData(1);
+ **
  *@brief creating the threads to each and every screen 
- * @brief handled by the mutexs
+ * @brief handled by the mutexso each and every screen 
  *@brief Multithreading & Synchronization
- *@brief Advanced Thread Management
- */
+ *@brief Advanced Thread Managementzation
+ */brief Advanced Thread Management
     thread t1(&DisplayManager::addScreen,&ds,dm4);
         thread t2(&DisplayManager::addScreen,&ds,dm5);
            thread t3(&DisplayManager::addScreen,&ds,dm6);
-           t1.join();
+           t1.join();&DisplayManager::addScreen,&ds,dm6);
            t2.join();
            t3.join();
             ds.renderAll();
-    return 0;
+    return 0;s.renderAll();
+}   return 0;
 }
