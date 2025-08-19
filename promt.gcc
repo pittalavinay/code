@@ -1,6 +1,9 @@
+#give code of prime number      
 #include <iostream>
 using namespace std;
 
+// This program prompts the user to enter two integers, calculates their product,
+// and displays the result. It uses standard input/output streams for interaction.
 int main() {
     int a, b, product;
     cout << "Enter two numbers: ";
